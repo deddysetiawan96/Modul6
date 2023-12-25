@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Modul 6 Website</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Modul 6</h1>
+    </header>
+    
+    <section>
+        <div class="container">
+            <h2>MACHINE LEARNING</h2>
+            <p>AI WEB MODEL DEPLOYMENT</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Upload File</h2>
+            <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" accept=".csv, .xlsx">
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Image Prediction</h2>
+            <p>Upload a image, and the model will make predictions.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Modul 6</p>
+    </footer>
+</body>
+</html>

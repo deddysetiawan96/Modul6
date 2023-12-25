@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/uploads/background.jpg'); /* Ganti dengan path gambar yang sesuai */
+    background-size: cover; /* Membuat gambar background menutupi seluruh layar */
+    background-position: center; /* Posisi gambar background di tengah */
+    color: white; /* Warna teks jika gambar latar belakang tidak terlihat jelas */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    padding: 2em 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-top: 1em;
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
